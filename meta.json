@@ -22,7 +22,7 @@
                 "qual": "g"
             }
         },
-        "source-code":  "../bubble-sort.js"
+        "source-code":  "bubble-sort.js"
     },
     "Insertion sort": {
         "complexity":{
@@ -47,7 +47,7 @@
                 "qual": "g"
             }
         },
-        "source-code":  "../insertion-sort.js"
+        "source-code":  "insertion-sort.js"
     },
     "Selection sort": {
         "complexity":{
@@ -72,7 +72,7 @@
                 "qual": "b"
             }
         },
-        "source-code": "../selection-sort.js"
+        "source-code": "selection-sort.js"
     },
     "Merge sort": {
         "complexity":{
@@ -97,7 +97,7 @@
                 "qual": "g"
             }
         },
-        "source-code": "../merge-sort.js"
+        "source-code": "merge-sort.js"
     },
     "Quick sort": {
         "complexity":{
@@ -122,7 +122,7 @@
                 "qual": "b"
             }
         },
-        "source-code": "../quick-sort.js"
+        "source-code": "quick-sort.js"
     },
     "Heap sort": {
         "complexity":{
@@ -147,7 +147,7 @@
                 "qual": "b"
             }
         },
-        "source-code": "../heap-sort.js"
+        "source-code": "heap-sort.js"
     },
 
     "Radix LSD sort": {
@@ -173,6 +173,6 @@
                 "qual": "g"
             }
         },
-        "source-code": "../radix-lsd-sort.js"
+        "source-code": "radix-lsd-sort.js"
     }
 }
