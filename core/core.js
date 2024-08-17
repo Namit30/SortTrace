@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-var currentAlgorithm = "Bubble sort", currentArraySize = 30, currentData = [], metaFile = "../meta.json", meta;
+var currentAlgorithm = "Bubble sort", currentArraySize = 30, currentData = [], metaFile = "meta.json", meta;
 var state = {
     running: false,
     pause: false,
