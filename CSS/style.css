@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'Noto Mono';
+    src: url("../css/noto-mono.ttf") format("truetype");
+}
+
+
+body {
+    font-family: 'Noto Mono', sans-serif;
+    background: linear-gradient(135deg, #f0f0f0, #dddddd);
+    color: #333;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #555;
+}
+
+a,
+a:hover,
+a:focus,
+form,
+form:hover {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: linear-gradient(to right, #ffffff, #f9f9f9);
+    border: none;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ccc;
+    margin: 40px 0;
+}
+
+/* SIDEBAR STYLE */
+#sidebar.hidden {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#sidebar {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+#content {
+    transition: margin-left 0.3s ease-in-out;
+}
+
+#content.shifted {
+    margin-left: 0;
+}
+
+#toggle-sidebar {
+    position: fixed; /* Keep button in place */
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    width: 50px; /* Set the width */
+    height: 50px; /* Set the height */
+    border-radius: 50%; /* Make it circular */
+    background-color: #98bdf4; /* Button background color */
+    color: rgb(11, 6, 6); /* Text color */
+    border: none; /* Remove default border */
+    display: flex; /* Flexbox for centering text */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 1000; /* Ensure it’s above other content */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 280px;
+    max-width: 280px;
+    background: linear-gradient(to bottom, #34495e, #0e2a45);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    z-index: 2;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+@keyframes glitter {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 15px rgba(255, 0, 0, 0.9), 0 0 30px rgba(255, 0, 0, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.5);
+    }
+}
+
+#sidebar.active {
+    margin-left: -280px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #0e2a45;
+    text-align: center;
+    border-bottom: 1px solid #0e2236;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+     animation: glitter 1.5s infinite;
+}
+
+#sidebar .sidebar-author {
+    padding: 2px;
+    font-size: small;
+    color: #ccc;
+}
+
+#sidebar ul p {
+    color: #ffffff;
+    padding: 10px;
+}
+
+#sidebar ul li a,
+#sidebar ul li form {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#sidebar ul li a:hover,
+#sidebar ul li form:hover {
+    background: #8dc6ff;
+    color: #333;
+    border-radius: 5px;
+}
+
+ul ul a {
+    background: #666;
+    padding-left: 30px;
+}
+
+ul ul [active="true"] {
+    background: #fff !important;
+    color: #333 !important;
+}
+
+ul.CTAs {
+    padding: 10px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background: #22313f;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+ul.CTAs a:hover {
+    background: #8dc6ff;
+    color: #333;
+}
+
+a.start {
+    background: #fffcfc !important;
+    color: #54ef43 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+a.shuffle,
+a.shuffle:hover {
+    background: #666 !important;
+    color: #fff !important;
+    box-shadow: 0 0 10px #666;
+}
+
+/* CONTENT STYLE */
+
+#content {
+    margin-left: 280px;
+    padding: 30px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    flex: 1;
+    z-index: 1; 
+}
+
+#meta-content {
+    width: 100%;
+    position: fixed;
+    transition: all 0.3s;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    padding-left: 280px;
+    height: 8%;
+}
+
+#meta-content .table {
+    margin: 0 0 40px 0;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+#meta-content .table .row {
+    display: table-row;
+    background: #f6f6f6;
+}
+
+#meta-content .table .header {
+    font-weight: 900;
+    color: #ffffff;
+    background: hwb(193 20% 41%);  
+}
+/* above color for header line best and worst case one*/
+
+#meta-content .table .row .cell {
+    padding: 6px 12px;
+    display: table-cell;
+    text-align: center;
+}
+
+#meta-content .table .row .g {
+    background: rgb(76, 121, 76); 
+}
+
+#meta-content .table .row .n {
+    background: rgb(179, 179, 107); 
+}
+
+#meta-content .table .row .b {
+    background: rgb(231, 115, 115); 
+}
+
+.chartHTML div {
+    font-size: 12px;
+    background: #8dc6ff;
+    color: rgb(170, 90, 90);
+    text-align: center;
+    margin: 0.1%;
+    transition: 0.1s;
+    width: 3%;
+    height: 0px;
+    display: inline-block;
+    opacity: 0.8;
+    border: 0px solid brown;
+}
+
+.chartHTML {
+    transition: 0.1s;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    height: 50vh;
+}
+
+.half {
+    display: inline-block;
+    width: 49%;
+}
+
+.chartSVG rect {
+    fill: blue;
+}
+
+.chartSVG rect:hover {
+    fill: orange;
+}
+
+.chartSvg text {
+    fill: rgb(226, 53, 53);
+    text-anchor: end;
+}
+
+/* MEDIAQUERIES */
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center; /* Center items vertically */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    #sidebar {
+        position: relative;
+        width: 100%;
+        max-width: none; /* Remove max-width to fill the space */
+        height: auto;
+        margin-left: 0;
+        text-align:center ;
+    }
+
+
+    #content {
+        margin-left: 0;
+        padding: 20px;
+        width: 100%;
+    }
+
+    #meta-content {
+        padding-left: 0;
+        position: relative;
+        height: auto;
+        margin-top: 20px;
+    }
+
+   
+}
