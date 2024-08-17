@@ -1,4 +1,4 @@
-import {bubbleSort, heapSort, insertionSort, mergeSort, quickSort, radixLSDSort, selectionSort} from 'core/algorithms.js'
+import {bubbleSort, heapSort, insertionSort, mergeSort, quickSort, radixLSDSort, selectionSort} from './algorithms.js'
 
 document.addEventListener("DOMContentLoaded", function() {
     if (window.innerWidth <= 768) {
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-var currentAlgorithm = "Bubble sort", currentArraySize = 30, currentData = [], metaFile = "meta.json", meta;
+var currentAlgorithm = "Bubble sort", currentArraySize = 30, currentData = [], metaFile = "../Assets/meta.json", meta;
 var state = {
     running: false,
     pause: false,
