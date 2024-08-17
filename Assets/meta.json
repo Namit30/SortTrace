@@ -47,7 +47,7 @@
                 "qual": "g"
             }
         },
-        "source-code":  "/Assets/bubble-sort.js"
+        "source-code":  "/Assets/insertion-sort.js"
     },
     "Selection sort": {
         "complexity":{
