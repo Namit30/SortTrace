@@ -1,4 +1,4 @@
-import {bubbleSort, heapSort, insertionSort, mergeSort, quickSort, radixLSDSort, selectionSort} from '../core/algorithms.js'
+import {bubbleSort, heapSort, insertionSort, mergeSort, quickSort, radixLSDSort, selectionSort} from 'core/algorithms.js'
 
 document.addEventListener("DOMContentLoaded", function() {
     if (window.innerWidth <= 768) {
