@@ -49,6 +49,7 @@ To run this project locally, you only need a modern web browser.
 
 ## Live Demo
 Check out the live demo of SortTrace here.
+https://sorttrace.netlify.app/
 
 ## Usage
 Select the sorting algorithm you want to visualize from the dropdown menu.
