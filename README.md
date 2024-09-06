@@ -1,7 +1,5 @@
 # SortTrace
 
-# SortTrace
-
 ![SortTrace Logo](path_to_your_logo_image)  <!-- Add your logo or remove this line -->
 
 ## Overview
