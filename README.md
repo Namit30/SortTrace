@@ -1,6 +1,6 @@
 # SortTrace
 
-![Logo](https://postimg.cc/RWNpjdtF)
+![Logo](https://i.postimg.cc/L8Tdg06z/Screenshot-2024-09-17-212859.jpg)
  <!-- Add your logo or remove this line -->
 
 ## Overview
